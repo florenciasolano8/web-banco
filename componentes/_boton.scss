@@ -1,0 +1,40 @@
+.boton1{
+    background-color: white;
+    color: #C85000;
+    text-decoration: none;
+    font-size: 15px;
+    border-radius: 25px;
+    padding: 8px 18px;
+    margin-right: -150px;
+    margin-bottom: 10px;
+    border: 1px solid #C85000; 
+    font-weight: bold;
+
+    &:hover {
+    background-color: #FFE2CE;
+}
+  }
+  .boton2{
+    @extend .boton1;
+    background-color: #C85000;
+    color:white;
+    margin-left: 20px;
+    &:hover {
+        background-color: white;
+        color:#C85000;
+  }
+}
+
+
+.boton3{
+  background-color: white;
+  color: #C85000;
+  text-decoration: none;
+  font-size: 15px;
+  border-radius: 25px;
+  padding: 8px 18px;  color:black;
+  &:hover {
+    background-color: #FFE2CE;
+        color:#C85000;
+}
+}
