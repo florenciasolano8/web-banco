@@ -1,0 +1,50 @@
+.primerparte{
+    display: flex;
+    flex-direction: column;
+    .tituloeimagen{
+        display: flex;
+        flex-direction: row;
+        h1{
+            color:black;
+            margin-left: 100px;
+            margin-top: 150px;
+
+        }
+        .imgdetitulo{
+            margin-left: 140px;
+        }
+    }
+.iconoscirculos{
+    display: flex;
+    flex-direction: row;
+    margin-top:50px;
+        .cardsmall{
+            display: flex;
+            flex-direction: column;
+            font-family:"Inter", sans-serif;
+            align-items: center;
+            justify-content: center;
+            margin-left: 5px;
+            border: 2px solid #F4F4F4;
+            border-radius: 20%;
+            background-color: #F4F4F4;
+            margin: 40px;
+            width: 120px;
+            margin-left: 60px !important;
+            .iconos{
+                width: 50px;   
+            }
+            &:hover {
+                background-color: #d5e1f7;
+                }
+    }
+}
+.segundotitulo{
+font-size: 40px;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 50px;
+margin-left: -45px;
+}
+}

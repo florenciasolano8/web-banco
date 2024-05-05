@@ -1,0 +1,47 @@
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+    margin-top: 80px;
+    margin-bottom: 40px;
+
+    .primero {
+        h4 {
+            color: black;
+        }
+
+        .contact-item {
+            width: 35px;
+        }
+    }
+
+    .segundo {
+        display: flex;
+        flex-direction: column;
+        margin-left: 100px;
+
+        p {
+            color: black;
+        }
+    }
+
+    .redes {
+        display: flex;
+        align-items: center;
+
+
+        .icono-wsp {
+            width: 50px;
+            position: fixed;
+            right: 25px;
+            bottom: 50px;
+            transition: 1s;
+
+            &:hover {
+                transform: rotate(360deg);
+            }
+
+        }
+    }
+}
