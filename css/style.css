@@ -32,7 +32,10 @@ header nav .boton {
 header .lupa {
   margin-bottom: 6px;
   width: 35px;
-  margin-right: 110px;
+  margin-right: -40px;
+}
+header .navbar {
+  display: none;
 }
 
 .boton1, .boton2 {
@@ -210,6 +213,67 @@ footer .redes .icono-wsp {
 }
 footer .redes .icono-wsp:hover {
   transform: rotate(360deg);
+}
+
+@media screen and (max-width: 767px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+  header nav {
+    display: none;
+  }
+  header .boton1,
+  header .boton2 {
+    display: none;
+  }
+  header .navbar {
+    display: block;
+    margin-right: auto;
+  }
+  header .lupa {
+    margin-left: 90px;
+  }
+  .primerparte {
+    display: flex;
+    flex-direction: column;
+  }
+  .primerparte .tituloeimagen h1 {
+    display: none;
+  }
+  .primerparte .tituloeimagen .imgdetitulo {
+    margin-left: 50px;
+    margin-top: 50px;
+    width: 400px;
+  }
+  .primerparte .iconoscirculos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+    grid-template-rows: repeat(3, 1fr); /* 3 filas */
+    gap: 20px; /* Espacio entre elementos */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .diaengalicia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    margin-left: -10px;
+  }
+  .ayuda {
+    margin-left: -5px;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .segundo {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

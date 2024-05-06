@@ -1,18 +1,21 @@
-.ayuda{
+.ayuda {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     margin-bottom: 20px;
     margin-left: -50px;
-background-color: #F5EEEA;
-.chat{
-    margin-left: 200px !important;
-}
-h3{
-    color: black;
-}
-.p{
-    color: black;
-}
+    background-color: #F5EEEA;
+
+    .chat {
+        margin-left: 200px !important;
+    }
+
+    h3 {
+        color: black;
+    }
+
+    .p {
+        color: black;
+    }
 }
