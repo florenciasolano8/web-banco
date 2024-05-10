@@ -5,7 +5,8 @@ header {
   align-items: center;
   flex-direction: row;
   margin-top: 20px;
-  border-bottom: 1px solid #E7EAED; /* Color y grosor de la línea */
+  border-bottom: 1px solid #E7EAED;
+  /* Color y grosor de la línea */
 }
 header .logogalicia {
   width: 150px;
@@ -15,11 +16,14 @@ header .logogalicia {
 header nav {
   margin-left: -140px;
 }
-header nav ul {
+header nav .dropdown .dropdown-item {
+  margin-left: none;
+}
+header nav .dropdown ul {
   display: flex;
   list-style-type: none;
 }
-header nav ul li a {
+header nav .dropdown ul li a {
   color: black;
   margin: 20px;
   text-decoration: none;
@@ -45,7 +49,7 @@ header .navbar {
   font-size: 15px;
   border-radius: 25px;
   padding: 8px 18px;
-  margin-right: -150px;
+  margin-right: -200px;
   margin-bottom: 8px;
   border: 1px solid #C85000;
   font-weight: bold;
@@ -57,7 +61,7 @@ header .navbar {
 .boton2 {
   background-color: #C85000;
   color: white;
-  margin-left: 20px;
+  margin-left: 10px;
 }
 .boton2:hover {
   background-color: white;
@@ -66,10 +70,13 @@ header .navbar {
 
 .boton3 {
   background-color: white;
+  margin-bottom: 15px;
   color: #C85000;
   text-decoration: none;
   font-size: 15px;
+  font-weight: bold;
   border-radius: 25px;
+  border: none;
   padding: 8px 18px;
   color: black;
 }
@@ -167,6 +174,7 @@ header .navbar {
   margin-bottom: 20px;
   margin-left: -50px;
   background-color: #F5EEEA;
+  margin-bottom: 40px;
 }
 .ayuda .chat {
   margin-left: 200px !important;
@@ -215,6 +223,75 @@ footer .redes .icono-wsp:hover {
   transform: rotate(360deg);
 }
 
+.cuerpo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #F4F4F4;
+  /*sobre clavesytoken.html*/
+  /*sobre tarjetas.html*/
+}
+.cuerpo .tituloeimagen {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  /* Posicionamiento relativo */
+  margin-top: 60px;
+  margin-bottom: 100px;
+}
+.cuerpo .tituloeimagen h1 {
+  position: absolute;
+  /* Posicionamiento absoluto */
+  text-align: center;
+  /* Centra el texto horizontalmente */
+  z-index: 1;
+  /* Asegura que el texto esté sobre la imagen */
+  margin-top: 100px;
+  margin-left: 60px;
+}
+.cuerpo .tituloeimagen p {
+  position: absolute;
+  /* Posicionamiento absoluto */
+  z-index: 1;
+  /* Asegura que el texto esté sobre la imagen */
+  margin-top: 230px;
+  margin-left: 60px;
+}
+.cuerpo .tituloeimagen img {
+  width: 1000px;
+  height: 400px;
+  z-index: 0;
+  /* Asegura que la imagen esté detrás del texto */
+  border-radius: 20px;
+}
+.cuerpo .card {
+  display: flex;
+  width: 650px;
+  height: auto;
+  margin-bottom: 40px;
+}
+.cuerpo .tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  width: auto;
+}
+.cuerpo .tarjetas .card {
+  flex: 0 0 calc(33.33% - 20px); /* 3 por fila */
+  margin: 10px;
+}
+.cuerpo .tarjetas .card .imgtarjeta {
+  width: 300px;
+  height: auto;
+}
+.cuerpo .tarjetas .card .h2 {
+  color: black;
+}
+.cuerpo .tarjetas .card .boton2 {
+  width: 150px;
+  margin-top: 40px;
+}
+
 @media screen and (max-width: 767px) {
   header {
     display: flex;
@@ -248,9 +325,12 @@ footer .redes .icono-wsp:hover {
   }
   .primerparte .iconoscirculos {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 columnas */
-    grid-template-rows: repeat(3, 1fr); /* 3 filas */
-    gap: 20px; /* Espacio entre elementos */
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 columnas */
+    grid-template-rows: repeat(3, 1fr);
+    /* 3 filas */
+    gap: 20px;
+    /* Espacio entre elementos */
     justify-content: center;
     align-items: center;
     text-align: center;

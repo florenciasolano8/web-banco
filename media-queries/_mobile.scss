@@ -1,127 +1,113 @@
 @media screen and (max-width: 767px) {
-        header {
-            display: flex;
-            justify-content: space-between;
+    header {
+        display: flex;
+        justify-content: space-between;
 
-    
-            nav {
-                display: none;
-            }
-    
-            .boton1,
-            .boton2 {
-                display: none;
-            }
 
-    
-            .navbar {
-                display: block;
-                margin-right: auto;
-            }
-               .lupa {
-                margin-left: 90px;
-            }
+        nav {
+            display: none;
         }
 
-.primerparte{
-    display: flex; 
-    flex-direction: column;
-    .tituloeimagen{   
-      
-    h1{
-    display: none;
+        .boton1,
+        .boton2 {
+            display: none;
+        }
+
+
+        .navbar {
+            display: block;
+            margin-right: auto;
+        }
+
+        .lupa {
+            margin-left: 90px;
+        }
     }
-    .imgdetitulo{
-        margin-left:50px;
-        margin-top:50px;
-        width: 400px;
-        
+
+    .primerparte {
+        display: flex;
+        flex-direction: column;
+
+        .tituloeimagen {
+
+            h1 {
+                display: none;
+            }
+
+            .imgdetitulo {
+                margin-left: 50px;
+                margin-top: 50px;
+                width: 400px;
+
+            }
+
+        }
+
+
+        .iconoscirculos {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            /* 2 columnas */
+            grid-template-rows: repeat(3, 1fr);
+            /* 3 filas */
+            gap: 20px;
+            /* Espacio entre elementos */
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+        }
     }
 
-}
+
+    .diaengalicia {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        margin-left: -10px;
+
+    }
+
+    .ayuda {
+        margin-left: -5px;
+    }
 
 
-    .iconoscirculos{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr); /* 2 columnas */
-        grid-template-rows: repeat(3, 1fr); /* 3 filas */
-        gap: 20px; /* Espacio entre elementos */
+    footer {
+        display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        text-align: center;
-      
-    }
-}
 
-
-.diaengalicia{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-self: center;
-    margin-left: -10px;
-
-}
-
-.ayuda{
-     margin-left:-5px;
-}
-
-
-footer{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    .segundo{
-        display:none
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        .segundo {
+            display: none
+        }
     }
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

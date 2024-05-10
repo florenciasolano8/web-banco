@@ -1,0 +1,83 @@
+.cuerpo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #F4F4F4;
+
+    /*sobre clavesytoken.html*/
+    .tituloeimagen {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        /* Posicionamiento relativo */
+        margin-top: 60px;
+        margin-bottom: 100px;
+
+        h1 {
+            position: absolute;
+            /* Posicionamiento absoluto */
+            text-align: center;
+            /* Centra el texto horizontalmente */
+            z-index: 1;
+            /* Asegura que el texto esté sobre la imagen */
+            margin-top: 100px;
+            margin-left: 60px;
+        }
+
+        p {
+            position: absolute;
+            /* Posicionamiento absoluto */
+            z-index: 1;
+            /* Asegura que el texto esté sobre la imagen */
+            margin-top: 230px;
+            margin-left: 60px;
+
+
+        }
+
+        img {
+            width: 1000px;
+            height: 400px;
+            z-index: 0;
+            /* Asegura que la imagen esté detrás del texto */
+            border-radius: 20px;
+
+        }
+    }
+
+
+    .card {
+        display: flex;
+        width: 650px;
+        height: auto;
+        margin-bottom: 40px;
+
+    }
+
+    /*sobre tarjetas.html*/
+    .tarjetas {
+        display: flex;
+        flex-wrap: wrap;
+        width: auto;
+
+        .card{
+            flex:0 0 calc(33.33% - 20px); /* 3 por fila */
+            margin: 10px;
+            .imgtarjeta {
+                width: 300px;
+                height: auto;
+
+            }
+
+            .h2 {
+                color: black;
+            }
+
+            .boton2 {
+                width: 150px;
+                margin-top: 40px;
+            }
+        }
+    }
+}
