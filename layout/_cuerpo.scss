@@ -45,39 +45,10 @@
 
         }
     }
-
-
-    .card {
-        display: flex;
-        width: 650px;
-        height: auto;
-        margin-bottom: 40px;
-
-    }
-
-    /*sobre tarjetas.html*/
-    .tarjetas {
-        display: flex;
-        flex-wrap: wrap;
-        width: auto;
-
-        .card{
-            flex:0 0 calc(33.33% - 20px); /* 3 por fila */
-            margin: 10px;
-            .imgtarjeta {
-                width: 300px;
-                height: auto;
-
-            }
-
-            .h2 {
-                color: black;
-            }
-
-            .boton2 {
-                width: 150px;
-                margin-top: 40px;
-            }
-        }
-    }
 }
+
+
+
+
+
+
