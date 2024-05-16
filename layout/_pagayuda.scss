@@ -1,8 +1,8 @@
 .contenedorayuda {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
     h1 {
         margin-top: 20px;
         margin-bottom: 30px;
@@ -12,15 +12,18 @@
 
     .temasconsultados {
         margin-top: 30px;
-        // display: grid;
-        // grid-template-columns: repeat(3, 1fr);
-        // /* 3 columnas de tamaño igual */
-        // grid-template-rows: repeat(3, 100px);
-        // /* 3 filas de 100px de alto cada una */
-        // gap: 10px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); // 3 columnas de tamaño igual
+        gap: 30px; // Espacio entre las tarjetas
+        justify-items: center; 
         .card {
             margin-top: 30px !important;
-
+           
+         &:hover { 
+            animation: pulse; 
+            animation-duration: 2s; 
+            background-color: #fff3eb;
+        }
             .row {
                 .col-md-4 {
                     .iconosayuda {

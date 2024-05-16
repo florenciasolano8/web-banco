@@ -45,6 +45,42 @@
 
         }
     }
+
+    .tarjetas{
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); // 3 columnas de tamaño igual
+        gap: 30px; // Espacio entre las tarjetas
+        justify-items: center; 
+        .card{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .imgtarjeta{
+                width: 280px;
+                height: 250px;
+            }
+            .h2{
+                color:black;
+            }
+            .boton2{
+                width: 50%;
+                margin-top:25px;
+                margin-bottom:20px;
+                margin-left: -200px;
+
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+
 }
 
 

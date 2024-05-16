@@ -163,7 +163,7 @@ header .navbar {
   display: flex;
   justify-content: center;
   margin-left: -190px;
-  width: 180px;
+  width: auto;
 }
 
 .ayuda {
@@ -264,6 +264,31 @@ footer .redes .icono-wsp:hover {
   /* Asegura que la imagen esté detrás del texto */
   border-radius: 20px;
 }
+.cuerpo .tarjetas {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  justify-items: center;
+}
+.cuerpo .tarjetas .card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cuerpo .tarjetas .card .imgtarjeta {
+  width: 280px;
+  height: 250px;
+}
+.cuerpo .tarjetas .card .h2 {
+  color: black;
+}
+.cuerpo .tarjetas .card .boton2 {
+  width: 50%;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  margin-left: -200px;
+}
 
 .contenedorcard {
   display: flex;
@@ -278,6 +303,7 @@ footer .redes .icono-wsp:hover {
 .contenedorayuda {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
 }
 .contenedorayuda h1 {
@@ -287,9 +313,18 @@ footer .redes .icono-wsp:hover {
 
 .temasconsultados {
   margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  justify-items: center;
 }
 .temasconsultados .card {
   margin-top: 30px !important;
+}
+.temasconsultados .card:hover {
+  animation: pulse;
+  animation-duration: 2s;
+  background-color: #fff3eb;
 }
 .temasconsultados .card .row .col-md-4 .iconosayuda {
   width: 60%;
