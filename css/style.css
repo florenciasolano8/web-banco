@@ -8,6 +8,9 @@ header {
   border-bottom: 1px solid #E7EAED;
   /* Color y grosor de la línea */
 }
+header .dropdown1 {
+  display: none;
+}
 header .logogalicia {
   width: 150px;
   margin-left: 90px;
@@ -166,6 +169,12 @@ header .navbar {
   width: auto;
 }
 
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  margin-top: 25px;
+  background-color: #C85000;
+}
+
 .ayuda {
   display: flex;
   justify-content: center;
@@ -257,12 +266,15 @@ footer .redes .icono-wsp:hover {
   margin-top: 230px;
   margin-left: 60px;
 }
-.cuerpo .tituloeimagen img {
+.cuerpo .tituloeimagen .imgweb {
   width: 1000px;
   height: 400px;
   z-index: 0;
   /* Asegura que la imagen esté detrás del texto */
   border-radius: 20px;
+}
+.cuerpo .tituloeimagen .imgmobi {
+  display: none;
 }
 .cuerpo .tarjetas {
   margin-top: 30px;
@@ -337,6 +349,14 @@ footer .redes .icono-wsp:hover {
     display: flex;
     justify-content: space-between;
   }
+  header .dropdown1 {
+    display: block;
+    margin-left: 10px;
+    margin-top: -15px;
+    background-color: #fac4a0;
+    border-radius: 10px;
+    font-weight: bold;
+  }
   header nav {
     display: none;
   }
@@ -393,6 +413,49 @@ footer .redes .icono-wsp:hover {
   }
   footer .segundo {
     display: none;
+  }
+  /*CLAVES Y TOKEN*/
+  .cuerpo {
+    /*TARJETAS*/
+    /*CUENTAS*/
+  }
+  .cuerpo .tituloeimagen h1 {
+    display: none;
+  }
+  .cuerpo .tituloeimagen p {
+    display: none;
+  }
+  .cuerpo .tituloeimagen .imgweb {
+    display: none;
+  }
+  .cuerpo .tituloeimagen .imgmobi {
+    display: block;
+    width: 700px;
+  }
+  .cuerpo .tarjetas {
+    display: flex;
+    flex-direction: column;
+  }
+  .cuerpo .contenedorcard {
+    display: flex;
+    flex-direction: column;
+  }
+  /*AYUDA*/
+  .temasconsultados {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .card {
+    width: 200px;
+  }
+  .card .imgtarjeta {
+    width: 250px !important;
+  }
+  .iconosayuda {
+    width: 80px !important;
+    height: auto;
   }
 }
 

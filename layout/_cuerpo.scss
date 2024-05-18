@@ -36,13 +36,16 @@
 
         }
 
-        img {
+        .imgweb {
             width: 1000px;
             height: 400px;
             z-index: 0;
             /* Asegura que la imagen esté detrás del texto */
             border-radius: 20px;
 
+        }
+        .imgmobi{
+            display: none;
         }
     }
 

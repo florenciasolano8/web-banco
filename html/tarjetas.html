@@ -43,6 +43,22 @@
 
 <body>
     <header>
+
+      
+           <!--menu-->
+           <div class="dropdown1">
+            <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Más</button>
+            <ul class="dropdown-menu">
+              <li><button class="dropdown-item" type="button" onclick= "window.location.href='../index.html' ">Inicio</button></li>
+              <li><button class="dropdown-item" type="button"  onclick= "window.location.href='clavesytoken.html' ">Crear claves y Token</button></li>
+              <li><button class="dropdown-item" type="button"  onclick= "window.location.href='tarjetas.html' ">Tarjetas</button></li>
+              <li><button class="dropdown-item" type="button"  onclick= "window.location.href='cuentas.html' ">Cuentas</button></li>
+              <li><button class="dropdown-item" type="button" onclick= "window.location.href='ayuda.html';">Ayuda</button></li>
+            </ul>
+          </div>
+
+
         <img src="https://www.galicia.ar/content/dam/galicia/banco-galicia/personas/home/Logo-TenesGalicia.jpg"
             alt="logo de la pagina" class="logogalicia" />
 
@@ -76,59 +92,116 @@
     <div class="tituloeimagen">
       <h1>Elegí tu Tarjeta de<br> Débito o Crédito</h1>
       <p>Te la damos bonificada por 6 meses 😉</p>
-      <img src="https://www.galicia.ar/content/dam/galicia/banco-galicia/personas/tarjetas/web/Hero-Tarjetas-desktop.jpg" alt="tarjetas" />    
+      <img src="https://www.galicia.ar/content/dam/galicia/banco-galicia/personas/tarjetas/web/Hero-Tarjetas-desktop.jpg" alt="tarjetas1" class="imgweb"/>    
+      <img src="https://www.galicia.ar/content/dam/galicia/banco-galicia/personas/tarjetas/web/Hero-Tarjetas-desktop.jpg/jcr:content/renditions/Galicia-Mobile.jpeg" alt="tarjetas2" class="imgmobi" />    
+
     </div>
     
     <div class="tarjetas">
-    <div class="card">
-      <img src="https://www.galicia.ar/content/dam/galicia/banco-galicia/personas/tarjetas/web/Visa-black-eminent.jpg" alt="tarjetas" class="imgtarjeta"/>    
-       <h2>Tarjeta de Crédito<br>Visa Signature</h2>
-       <a class="boton2" href="#">Pedir Tarjeta</a>
+      <!--PRIMER CARROUSEL-->
+  <div id="carouselExample1" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="card">
+          <img src="https://www.galicia.ar/content/dam/galicia/banco-galicia/personas/tarjetas/web/Visa-black-eminent.jpg" alt="tarjetas" class="imgtarjeta"/>
+          <h2>Tarjeta de Crédito<br>Visa Signature</h2>
+          <a class="boton2" href="#">Pedir Tarjeta</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="card">
+          <img src="https://www.galicia.ar/content/dam/galicia/banco-galicia/personas/tarjetas/web/Visa-black-eminent.jpg" alt="tarjetas" class="imgtarjeta"/>
+          <h2>Tarjeta de Crédito<br>Visa Signature</h2>
+          <a class="boton2" href="#">Pedir Tarjeta</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="card">
+          <img src="https://www.galicia.ar/content/dam/galicia/banco-galicia/personas/tarjetas/web/visa-debito.jpg" alt="tarjetas" class="imgtarjeta"/>
+          <h2>Tarjeta de Crédito<br>Visa Signature</h2>
+          <a class="boton2" href="#">Pedir Tarjeta</a>
+        </div>
+      </div>
     </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample1" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample1" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
 
-    <div class="card">
-      <img src="https://www.galicia.ar/content/dam/galicia/banco-galicia/personas/tarjetas/web/Visa-black-eminent.jpg" alt="tarjetas" class="imgtarjeta"/>    
-       <h2>Tarjeta de Crédito<br>Visa Signature</h2>
-       <a class="boton2" href="#">Pedir Tarjeta </a>
+  <!--SEGUNDO CARROUSEL-->
+  <div id="carouselExample2" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="card">
+          <img src="https://www.galicia.ar/content/dam/galicia/banco-galicia/personas/tarjetas/web/Visa-black-eminent.jpg" alt="tarjetas" class="imgtarjeta"/>
+          <h2>Tarjeta de Crédito<br>Visa Signature</h2>
+          <a class="boton2" href="#">Pedir Tarjeta</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="card">
+          <img src="https://www.galicia.ar/content/dam/galicia/banco-galicia/personas/tarjetas/web/Visa-black-eminent.jpg" alt="tarjetas" class="imgtarjeta"/>
+          <h2>Tarjeta de Crédito<br>Visa Signature</h2>
+          <a class="boton2" href="#">Pedir Tarjeta</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="card">
+          <img src="https://www.galicia.ar/content/dam/galicia/banco-galicia/personas/tarjetas/web/visa-debito.jpg" alt="tarjetas" class="imgtarjeta"/>
+          <h2>Tarjeta de Crédito<br>Visa Signature</h2>
+          <a class="boton2" href="#">Pedir Tarjeta</a>
+        </div>
+      </div>
     </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample2" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample2" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div> 
 
-    <div class="card">
-      <img src="https://www.galicia.ar/content/dam/galicia/banco-galicia/personas/tarjetas/web/visa-debito.jpg" alt="tarjetas" class="imgtarjeta"/>    
-       <h2>Tarjeta de Crédito<br>Visa Signature</h2>
-       <a class="boton2" href="#"> Pedir Tarjeta</a>
+  <!--TERCER CARROUSEL-->
+  <div id="carouselExample3" class="carousel slide" >
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="card">
+          <img src="https://www.galicia.ar/content/dam/galicia/banco-galicia/personas/tarjetas/web/visa-debito.jpg" alt="tarjetas" class="imgtarjeta"/>
+          <h2>Tarjeta de Crédito<br>Visa Signature</h2>
+          <a class="boton2" href="#">Pedir Tarjeta</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="card">
+          <img src="https://www.galicia.ar/content/dam/galicia/banco-galicia/personas/tarjetas/web/Visa-black-eminent.jpg" alt="tarjetas" class="imgtarjeta"/>
+          <h2>Tarjeta de Crédito<br>Visa Signature</h2>
+          <a class="boton2" href="#">Pedir Tarjeta</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="card">
+          <img src="https://www.galicia.ar/content/dam/galicia/banco-galicia/personas/tarjetas/web/visa-debito.jpg" alt="tarjetas" class="imgtarjeta"/>
+          <h2>Tarjeta de Crédito<br>Visa Signature</h2>
+          <a class="boton2" href="#">Pedir Tarjeta</a>
+        </div>
+      </div>
     </div>
-
-    <div class="card">
-      <img src="https://www.galicia.ar/content/dam/galicia/banco-galicia/personas/tarjetas/web/Visa-black-eminent.jpg" alt="tarjetas" class="imgtarjeta"/>    
-       <h2>Tarjeta de Crédito<br>Visa Signature</h2>
-       <a class="boton2" href="#">Pedir Tarjeta </a>
-    </div>
-
-    <div class="card">
-      <img src="https://www.galicia.ar/content/dam/galicia/banco-galicia/personas/tarjetas/web/Visa-black-eminent.jpg" alt="tarjetas" class="imgtarjeta"/>    
-       <h2>Tarjeta de Crédito<br>Visa Signature</h2>
-       <a class="boton2" href="#">Pedir Tarjeta</a>
-    </div>
-    <div class="card">
-      <img src="https://www.galicia.ar/content/dam/galicia/banco-galicia/personas/tarjetas/web/amex-gold.jpg" alt="tarjetas" class="imgtarjeta"/>    
-       <h2>Tarjeta de Crédito<br>Visa Signature</h2>
-       <a class="boton2" href="#">Pedir Tarjeta</a>
-    </div>
-    <div class="card">
-      <img src="https://www.galicia.ar/content/dam/galicia/banco-galicia/personas/tarjetas/web/amex-platinum.jpg" alt="tarjetas" class="imgtarjeta"/>    
-       <h2>Tarjeta de Crédito<br>Visa Signature</h2>
-       <a class="boton2" href="#">Pedir Tarjeta</a>
-    </div>
-    <div class="card">
-      <img src="https://www.galicia.ar/content/dam/galicia/banco-galicia/personas/tarjetas/web/amex-platinum.jpg" alt="tarjetas" class="imgtarjeta"/>    
-       <h2>Tarjeta de Crédito<br>Visa Signature</h2>
-       <a class="boton2" href="#">Pedir Tarjeta</a>
-    </div>
-    <div class="card">
-      <img src="https://www.galicia.ar/content/dam/galicia/banco-galicia/personas/tarjetas/web/Visa-debito-eminent.jpg" alt="tarjetas" class="imgtarjeta"/>    
-       <h2>Tarjeta de Crédito<br>Visa Signature</h2>
-       <a class="boton2" href="#">Pedir Tarjeta </a>
-    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample3" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample3" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
 
   </div>
 </section>
